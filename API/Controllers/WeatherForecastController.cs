@@ -13,11 +13,13 @@ public class WeatherForecastController : ControllerBase
 
     private readonly ILogger<WeatherForecastController> _logger;
 
+    // dependency injection
     public WeatherForecastController(ILogger<WeatherForecastController> logger)
     {
         _logger = logger;
     }
 
+    //endpoint 
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
