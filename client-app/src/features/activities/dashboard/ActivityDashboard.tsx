@@ -18,9 +18,7 @@ interface Props {
 }
 
 const ActivityDashboard = ({activities, selectActivity, selectedActivity, submitting,
-    cancelSelectActivity, editMode, openForm, closeForm, createOrEdit, deleteActivity}: Props) => {
-        console.log(activities);
-        
+    cancelSelectActivity, editMode, openForm, closeForm, createOrEdit, deleteActivity}: Props) => {        
   return (
     <Grid>
         <Grid.Column width='10'>
