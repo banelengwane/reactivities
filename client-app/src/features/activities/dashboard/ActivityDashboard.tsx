@@ -5,7 +5,7 @@ import ActivityDetails from '../details/ActivityDetails'
 import ActivityForm from '../form/ActivityForm'
 
 interface Props {
-    activities: Activity[]
+    activities: Activity[];
     selectedActivity: Activity | undefined;
     selectActivity: (id: string) => void;
     cancelSelectActivity: () => void;
@@ -19,6 +19,8 @@ interface Props {
 
 const ActivityDashboard = ({activities, selectActivity, selectedActivity, 
     cancelSelectActivity, editMode, openForm, closeForm, createOrEdit, deleteActivity}: Props) => {
+        console.log(activities);
+        
   return (
     <Grid>
         <Grid.Column width='10'>
