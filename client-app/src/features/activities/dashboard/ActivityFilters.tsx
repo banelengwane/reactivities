@@ -13,8 +13,6 @@ const ActivityFilters = () => {
         <Header />
         <Calendar />
     </>
-    
-
   )
 }
 
