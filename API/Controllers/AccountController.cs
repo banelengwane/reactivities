@@ -28,14 +28,14 @@ namespace API.Controllers
 
             var result = await _userManager.CheckPasswordAsync(user, loginDto.Password);
 
-            if(result)
+            if (result)
             {
-                new UserDto
+                return new UserDto
                 {
                     DisplayName = user.DisplayName,
                     Image = null,
                     Token = _tokenService.CreateToken(user),
-                    Username = user.UserName,
+                    Username = user.UserName
                 };
             }
 
