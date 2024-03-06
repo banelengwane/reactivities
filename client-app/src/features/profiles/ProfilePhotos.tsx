@@ -3,13 +3,18 @@ import { Button, Card, Grid, Header, Image, TabPane } from "semantic-ui-react"
 import { Profile } from "../../app/models/profile"
 import { useStore } from "../../app/stores/store";
 import { useState } from "react";
+import PhotoUploadWidget from "../../app/common/imageUpload/PhotoUploadWidget";
 
 interface Props {
     profile: Profile;
 }
 const ProfilePhotos = ({profile}: Props) => {
-    const {profileStore: {isCurrentUser}} = useStore();
+    const {profileStore: {isCurrentUser, uploadPhoto, uploading}} = useStore();
     const [addPhotoMode, setAddPhotoMode] = useState(false);
+
+    function handlePhotoUpload(file: Blob){
+        uploadPhoto(file).then(() => setAddPhotoMode(false))
+    }
   return (
     <TabPane>
         <Grid>
@@ -21,7 +26,7 @@ const ProfilePhotos = ({profile}: Props) => {
             </Grid.Column>
             <Grid.Column width={16}>
                 {addPhotoMode ? (
-                    <p>Photo widgets goes here</p>
+                    <PhotoUploadWidget uploadPhoto={handlePhotoUpload} loading={uploading} />
                 ) : (
                     <Card.Group itemsPerRow={5}>
                         {profile.photos?.map(photo => (
