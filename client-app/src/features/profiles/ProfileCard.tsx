@@ -13,11 +13,11 @@ const ProfileCard = ({profile}: Props) => {
         <Image src={profile.image || '/assets/user.png'} />
         <Card.Content>
             <Card.Header>{profile.displayName}</Card.Header>
-            <Card.Description>Bio goes here</Card.Description>
+            <Card.Description>{profile.bio}</Card.Description>
         </Card.Content>
         <Card.Content extra>
             <Icon name='user' />
-            20 followers
+            {profile.followersCount} followers
         </Card.Content>
     </Card>
 
