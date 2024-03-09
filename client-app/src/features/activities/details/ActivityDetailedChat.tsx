@@ -12,7 +12,6 @@ interface Props{
 
 export default observer(function ActivityDetailedChat({activityId}: Props) {
     const {commentStore} = useStore();
-
     useEffect(() => {
         if(activityId){
             commentStore.createHubConnection(activityId);
@@ -35,20 +34,7 @@ export default observer(function ActivityDetailedChat({activityId}: Props) {
                 <Header>Chat about this event</Header>
             </Segment>
             <Segment attached clearing>
-                <Comment.Group>
-                    {commentStore.comments.map(comment => (
-                        <Comment key={comment.id}>
-                            <Comment.Avatar src={comment.image ||'/assets/user.png'}/>
-                            <Comment.Content>
-                                <Comment.Author as={Link} to={`/profiles/${comment.username}`}>{comment.displayName}</Comment.Author>
-                                    <Comment.Metadata>
-                                        <div>{comment.createdAt}</div>
-                                    </Comment.Metadata>
-                                    <Comment.Text style={{whiteSpace: 'pre-wrap'}}>{comment.body}</Comment.Text>
-                            </Comment.Content>
-                        </Comment>                    
-                    ))}
-                    <Formik
+            <Formik
                         onSubmit={(values, {resetForm}) => commentStore.addComment(values).then(() => resetForm())}
                         initialValues={{body: ''}}
                         validationSchema={Yup.object({
@@ -80,7 +66,21 @@ export default observer(function ActivityDetailedChat({activityId}: Props) {
                                 </Field>
                             </Form>
                         )}
-                    </Formik>                    
+                    </Formik>
+                <Comment.Group>
+                    {commentStore.comments.map(comment => (
+                        
+                        <Comment key={comment.id}>
+                            <Comment.Avatar src={comment.image ||'/assets/user.png'}/>
+                            <Comment.Content>
+                                <Comment.Author as={Link} to={`/profiles/${comment.username}`}>{comment.displayName}</Comment.Author>
+                                    <Comment.Metadata>                                        
+                                        <div>{comment.createdAt.toString()}</div>
+                                    </Comment.Metadata>
+                                    <Comment.Text style={{whiteSpace: 'pre-wrap'}}>{comment.body}</Comment.Text>
+                            </Comment.Content>
+                        </Comment>                    
+                    ))}                    
                 </Comment.Group>
             </Segment>
         </>
