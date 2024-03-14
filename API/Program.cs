@@ -34,8 +34,11 @@ if (app.Environment.IsDevelopment())
 app.UseCors("CorsPolicy");
 
 app.UseAuthentication();
-
 app.UseAuthorization();
+
+app.UseDefaultFiles();
+app.UseStaticFiles();
+app.MapFallbackToController("Index", "Fallback");
 
 app.MapControllers();
 app.MapHub<ChatHub>("/chat");
