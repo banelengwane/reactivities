@@ -9,12 +9,17 @@ interface Props {
 }
 
 const ProfileCard = ({profile}: Props) => {
+  function truncate(str: string | undefined) {
+    if (str) {
+      return str.length
+    }
+  }
   return (
     <Card as={Link} to={`/profiles/${profile.username}`}>
         <Image src={profile.image || '/assets/user.png'} />
         <Card.Content>
             <Card.Header>{profile.displayName}</Card.Header>
-            <Card.Description>{profile.bio}</Card.Description>
+            <Card.Description>{truncate(profile.bio)}</Card.Description>
         </Card.Content>
         <Card.Content extra>
             <Icon name='user' />
