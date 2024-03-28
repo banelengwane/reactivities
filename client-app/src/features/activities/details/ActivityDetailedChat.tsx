@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Formik, Form, Field, FieldProps } from 'formik';
 import * as Yup from 'yup';
+import { formatDistanceToNow } from 'date-fns';
 
 interface Props{
     activityId: string;
@@ -69,17 +70,17 @@ export default observer(function ActivityDetailedChat({activityId}: Props) {
                     </Formik>
                 <Comment.Group>
                     {commentStore.comments.map(comment => (
-                        
-                        <Comment key={comment.id}>
+                            <Comment key={comment.id}>
                             <Comment.Avatar src={comment.image ||'/assets/user.png'}/>
                             <Comment.Content>
                                 <Comment.Author as={Link} to={`/profiles/${comment.username}`}>{comment.displayName}</Comment.Author>
                                     <Comment.Metadata>                                        
-                                        <div>{comment.createdAt.toString()}</div>
+                                        <div>{formatDistanceToNow(comment.createdAt)} ago</div>
                                     </Comment.Metadata>
                                     <Comment.Text style={{whiteSpace: 'pre-wrap'}}>{comment.body}</Comment.Text>
                             </Comment.Content>
-                        </Comment>                    
+                            </Comment> 
+                                          
                     ))}                    
                 </Comment.Group>
             </Segment>
