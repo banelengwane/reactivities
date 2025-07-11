@@ -1,0 +1,12 @@
+/home/banele/Documents/projects/reactivities/Domain/bin/Debug/net9.0/Domain.deps.json
+/home/banele/Documents/projects/reactivities/Domain/bin/Debug/net9.0/Domain.dll
+/home/banele/Documents/projects/reactivities/Domain/bin/Debug/net9.0/Domain.pdb
+/home/banele/Documents/projects/reactivities/Domain/obj/Debug/net9.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/banele/Documents/projects/reactivities/Domain/obj/Debug/net9.0/Domain.AssemblyInfoInputs.cache
+/home/banele/Documents/projects/reactivities/Domain/obj/Debug/net9.0/Domain.AssemblyInfo.cs
+/home/banele/Documents/projects/reactivities/Domain/obj/Debug/net9.0/Domain.csproj.CoreCompileInputs.cache
+/home/banele/Documents/projects/reactivities/Domain/obj/Debug/net9.0/Domain.sourcelink.json
+/home/banele/Documents/projects/reactivities/Domain/obj/Debug/net9.0/Domain.dll
+/home/banele/Documents/projects/reactivities/Domain/obj/Debug/net9.0/refint/Domain.dll
+/home/banele/Documents/projects/reactivities/Domain/obj/Debug/net9.0/Domain.pdb
+/home/banele/Documents/projects/reactivities/Domain/obj/Debug/net9.0/ref/Domain.dll

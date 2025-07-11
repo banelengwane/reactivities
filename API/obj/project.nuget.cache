@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eqfZ1rASumE=",
+  "dgSpecHash": "OWU0pYG+4so=",
   "success": true,
   "projectFilePath": "/home/banele/Documents/projects/reactivities/API/API.csproj",
-  "expectedPackageFiles": [
-    "/home/banele/.nuget/packages/microsoft.aspnetcore.openapi/9.0.6/microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
-    "/home/banele/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

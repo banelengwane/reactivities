@@ -1,0 +1,16 @@
+/home/banele/Documents/projects/reactivities/Persistence/bin/Debug/net9.0/Persistence.deps.json
+/home/banele/Documents/projects/reactivities/Persistence/bin/Debug/net9.0/Persistence.dll
+/home/banele/Documents/projects/reactivities/Persistence/bin/Debug/net9.0/Persistence.pdb
+/home/banele/Documents/projects/reactivities/Persistence/bin/Debug/net9.0/Domain.dll
+/home/banele/Documents/projects/reactivities/Persistence/bin/Debug/net9.0/Domain.pdb
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/Persistence.csproj.AssemblyReference.cache
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/Persistence.AssemblyInfoInputs.cache
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/Persistence.AssemblyInfo.cs
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/Persistence.csproj.CoreCompileInputs.cache
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/Persistence.sourcelink.json
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/Persiste.61C28332.Up2Date
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/Persistence.dll
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/refint/Persistence.dll
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/Persistence.pdb
+/home/banele/Documents/projects/reactivities/Persistence/obj/Debug/net9.0/ref/Persistence.dll
