@@ -1,3 +1,4 @@
+using Application.Activities.commands;
 using Application.Activities.Queries;
 using Domain;
 using MediatR;
@@ -14,11 +15,17 @@ namespace API.Controllers
         {
             return await Mediator.Send(new GetActivityList.Query());
         }
-        
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Activity>> GetActivityDetail(string id)
         {
-            return await Mediator.Send(new GetActivityDetails.Query{Id = id});
+            return await Mediator.Send(new GetActivityDetails.Query { Id = id });
+        }
+
+        [HttpPost]
+        public async Task<ActionResuly<string>> CreateActivity(Activity activity)
+        {
+            return await Mediator.Send(new CreateActivity.Command { Activity = activity });
         }
     }
 }
