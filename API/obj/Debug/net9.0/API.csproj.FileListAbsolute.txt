@@ -156,3 +156,9 @@
 /home/banele/Documents/projects/reactivities/API/bin/Debug/net9.0/runtimes/win-arm64/native/e_sqlite3.dll
 /home/banele/Documents/projects/reactivities/API/bin/Debug/net9.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/banele/Documents/projects/reactivities/API/bin/Debug/net9.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/banele/Documents/projects/reactivities/API/bin/Debug/net9.0/MediatR.dll
+/home/banele/Documents/projects/reactivities/API/bin/Debug/net9.0/MediatR.Contracts.dll
+/home/banele/Documents/projects/reactivities/API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/home/banele/Documents/projects/reactivities/API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/banele/Documents/projects/reactivities/API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/home/banele/Documents/projects/reactivities/API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
